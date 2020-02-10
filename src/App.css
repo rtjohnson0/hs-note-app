@@ -1,38 +1,95 @@
-.App {
+
+
+header{
+  padding: 20px;
   text-align: center;
+  background: rgb(10,29,175);
+  background: linear-gradient(90deg, rgba(10,29,175,0.6012780112044818) 13%, rgba(242,110,110,0.4640231092436975) 37%, rgba(177,0,255,0.427608543417367) 73%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+ 
+
+}
+
+.main-content ol{
+
+padding-right: 40px;
+animation: float 4s ease-in-out infinite;
+}
+.main-content li{
+  border: 3px solid cyan;
+  list-style-type: none;
+  text-align: center;
+  right: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+footer{
   color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: rgb(10,29,175);
+  background: linear-gradient(90deg, rgba(10,29,175,0.6012780112044818) 13%, rgba(242,110,110,0.4640231092436975) 37%, rgba(177,0,255,0.427608543417367) 73%);
 }
 
-.App-link {
-  color: #61dafb;
+footer form input,
+footer form textarea {
+
+  border: none;
+  outline: none;
+  border-bottom: 2px solid blue;
+
+  font-size: 14px;
+  display: block;
+  text-align: center ;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 30px;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer form textarea {
+
+  height: 50px;
+}
+
+footer form button{
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: orangered;
+  border: outset;
+  margin-top: 20px;
+
+}
+
+footer form button:hover{
+  border: inset;
+}
+
+@keyframes float {
+  0% {
+    
+    transform: translatey(1px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    
+    transform: translatey(-13px);
+  }
+  100% {
+    
+    transform: translatey(1px);
   }
 }
